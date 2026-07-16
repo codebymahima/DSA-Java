@@ -7,18 +7,8 @@ package LinkedList;
 // either way time complexity = O(n)
 // space complexity = O(1)
 
-public class ListNode {
-     int val;
-     ListNode next;
-     ListNode() {}
-    ListNode(int val) { this.val = val; }
-    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-}
-class Solution {
+public class DeleteDuplicates {
     public ListNode deleteDuplicates(ListNode head) {
-        if(head==null || head.next == null){
-            return head;
-        }
         ListNode current = head;
 
         while(current!=null && current.next!=null){
@@ -33,4 +23,11 @@ class Solution {
 
         return head;
     }
+}
+ class ListNode {
+     int val;
+     ListNode next;
+     ListNode() {}
+    ListNode(int val) { this.val = val; }
+    ListNode(int val, ListNode next) { this.val = val; this.next = next; }
 }
